@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card" onclick="showDetails('Card 1')">Card 1</div>
+    <div class="card" onclick="showDetails('Card 2')">Card 2</div>
+    <div class="card" onclick="showDetails('Card 3')">Card 3</div>
+    <div class="card" onclick="showDetails('Card 4')">Card 4</div>
+    <div class="card" onclick="showDetails('Card 5')">Card 5</div>
+    <div class="card" onclick="showDetails('Card 6')">Card 6</div>
+    <div class="card" onclick="showDetails('Card 7')">Card 7</div>
+    <div class="card" onclick="showDetails('Card 8')">Card 8</div>
+    <div class="card" onclick="showDetails('Card 9')">Card 9</div>
+    <div class="card" onclick="showDetails('Card 10')">Card 10</div>
+    <div class="card" onclick="showDetails('Card 11')">Card 11</div>
+    <div class="card" onclick="showDetails('Card 12')">Card 12</div>
+
+    <script>
+        function showDetails(cardName) {
+            window.location.href = `${cardName.toLowerCase().replace(' ', '')}.html`;
+        }
+    </script>
+</body>
+</html>

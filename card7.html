@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 7 Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .details {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .uno-card {
+            width: 100px;
+            height: 150px;
+            background-color: green;
+            border-radius: 10px;
+            border: 2px solid #000;
+            position: relative;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            line-height: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+
+        .uno-card::before,
+        .uno-card::after {
+            content: '7';
+            position: absolute;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .uno-card::before {
+            top: 5px;
+            left: 5px;
+        }
+
+        .uno-card::after {
+            bottom: 5px;
+            right: 5px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <h1>Card 7 Details</h1>
+        <p>This is the detailed content for Card 7.</p>
+        <div class="uno-card">7</div>
+        <a href="index.html" class="back-button">Back to Cards</a>
+    </div>
+</body>
+</html>
